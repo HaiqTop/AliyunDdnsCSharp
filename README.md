@@ -4,9 +4,8 @@
 
 基于阿里云最新云解析API编写的DDNS Windows Services 程序，可将本机公网IP实时更新到自己阿里云的域名解析记录中
 
-（原项目地址：https://github.com/xuchao1213/AliyunDdnsCSharp 
-
-    本项目是在原项目上增加了单个配置文件支持多个子域名。 ^_^ 我没有github账号，不能提交到gitbub）
+   - （原项目地址：https://github.com/xuchao1213/AliyunDdnsCSharp 
+   -   本项目是在原项目上增加了单个配置文件支持多个子域名。 ^_^ 我没有github账号，不能提交到gitbub）
 
 ### 特点
 
