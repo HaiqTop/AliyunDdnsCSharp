@@ -4,6 +4,9 @@
 
 基于阿里云最新云解析API编写的DDNS Windows Services 程序，可将本机公网IP实时更新到自己阿里云的域名解析记录中
 
+（原项目地址：https://github.com/xuchao1213/AliyunDdnsCSharp 
+    本项目是在原项目上增加了单个配置文件支持多个子域名。 ^_^ 我没有github账号，不能提交到gitbub）
+
 ### 特点
 
 1. 支持IPV4
@@ -33,7 +36,7 @@
       "AccessKeyId": "阿里云AccessKeyId See https://help.aliyun.com/knowledge_detail/38738.html?spm=5176.11065259.1996646101.searchclickresult.73c9490e2I0S3U",
       "AccessKeySecret": "阿里云AccessKeySecret",
       "DomainName": "阿里云域名 如 google.com",
-      "SubDomainName": "阿里云子域名 如 test",
+      "SubDomainNames": ["@","test","update"],
       "Type": "A/AAAA,目前仅支持 A(IPV4)、AAAA(IpV6),默认:A",
 	  "Line":"解析线路，默认为default。参见解析线路枚举 https://help.aliyun.com/document_detail/29807.html?spm=a2c4g.11186623.2.22.41dd2846rHiL1v",
       "TTL":"600,生存时间，默认为600秒（10分钟），参见TTL定义说明 https://help.aliyun.com/document_detail/29806.html?spm=a2c4g.11186623.2.18.7cde1cebY1cQtc",
